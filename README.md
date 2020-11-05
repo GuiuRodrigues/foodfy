@@ -1,5 +1,5 @@
 # foodfy
-Esse projeto foi um teste do bootcamp launchbase da rocketseat  no qual devemos construir uma aplicação chamada de foodfy.
+Esse projeto foi um teste avaliativo do bootcamp launchbase da rocketseat  no qual devemos construir uma aplicação chamada de foodfy.
 A mesma foi dividida em etapas.
 1. Criado as paginas Home, Sobre e Receitas.
    Tecnologias utilizadas:
