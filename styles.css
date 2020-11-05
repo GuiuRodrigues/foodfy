@@ -1,0 +1,250 @@
+@import"https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+:root{
+  --color-grey:#777777;
+  --color-black:#111111;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+    margin-top: 36.1px;
+    margin-left: 231px;
+    text-align: top left;
+    word-spacing: 30px;
+    font-size: 16px;
+    position: relative;
+}
+header a:hover {
+  background-color: #f1b1a8;
+  color: white;
+  padding: 10px;
+  border-radius: 20px 0px 20px 0px;
+}
+
+a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px 19px;
+  width: 62px;
+  height: 19px;
+  color : var(--color-black);
+  text-decoration: none;
+}
+a:first-child {
+  font-family: 'Times New Roman', Times, serif;
+  word-spacing: 112.4px;
+  opacity: 100%;
+  font-size: 32px;
+  text-decoration: none;
+  color:var(--color-black);
+}
+/* === BACKGROUND ===*/
+.content{
+    margin-left: 231px;
+    margin-top: 30px;
+    width: 940px;
+    height: 366px;
+    background: #FBDFDB;
+    border-radius: 30px;
+    border-radius: 30px;
+    opacity: 100%;
+    position: relative;
+  
+}
+
+.content h1{
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 8px;
+  opacity: 100%;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 117px;
+  margin-left: 60px;
+}
+.content p {
+  opacity: 0.7;
+  font-size: 18px;
+  color: #000000;
+  line-height: 28px;
+  font-weight: normal;
+  position: absolute;
+  width: 316px;
+  height: 84px;
+  margin-top: 165px;
+  margin-left: 60px;
+}
+#chef{
+  position: 854px 159px;
+    width: 216px;
+    height: 300px;
+    margin-left: 624px;
+    margin-top: 66px;
+}
+#id3 h1{
+  margin-left: 231px;
+  font-weight: bold;
+  size: 24px;
+  margin-top: 50px;
+ 
+}
+
+/*===RECIPES===*/
+
+.recipes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 231px;
+    margin-right: 231px;
+}
+.recipe-imagem-container img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px 15px;
+    margin-top: 50px;
+    margin-right: 20px;
+
+}
+
+.recipe-name{
+    size: 14px;
+    margin-top: 20px;
+}
+.recipe-author{
+  margin-top:1px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #777777;
+}
+.footer{
+    background-color: #eeeeee;
+    width: 1903px;
+    height: 62px;
+    opacity: 100%;
+    position: absolute
+}
+
+.footer h1{
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-top: 23px;
+}
+
+
+/*===ABOUT===*/
+
+header a2{
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.text h1{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 24px;
+  color: #111111;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 230px;
+}
+
+.text h2, h3{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+  color: #111111;
+  margin-left: 230px;
+  margin-bottom: 20px;
+}
+
+.text p{
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  width: 940px;
+  height: 280px;
+  margin-left: 230px;
+}
+
+/*=== Recipes ===*/
+header a3{
+  font-weight: bold;
+}
+/* === Modal.overlay === */
+.modal-overlay{
+  background: rgb(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal{
+  background-color: #FFFFFF;
+  opacity: 100%;
+  width: 660px;
+  height: 413px;
+  margin: 26.4vh auto ;
+  position: relative;
+  border-radius: 16px;
+}
+
+.modal .close-modal{
+  font-family: 'Roboto';
+  font-weight: 'regular';
+  font-size: 16px;
+  color: #999999;
+  line-height: 19px;
+  position: absolute;
+  right: 281px;
+  bottom: 30px ;
+  cursor: pointer;
+
+}
+
+.modal img {
+  border-radius: 15px;
+  width: 600px;
+  height: 200px;
+  object-fit: cover;
+  margin: 30px 30px 10px 30px;
+}
+#nome_receita {
+  font-size: 24px;;
+  color: #111111;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 'regular';
+}
+
+#chef_receita {
+  font-size: 18px;
+  line-height: 28px;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  font-weight: 'regular';
+}
+/* === Modal.active === */
+
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.iframe{
+  width: 600px;
+  height: 200px;
+  border-radius: 15px;
+}
