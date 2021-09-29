@@ -1,0 +1,62 @@
+{%extends "layout.njk"%}
+{%block head%}
+  <title>Foodfy -
+    {{item.title}}</title>
+  {%endblock%}
+  {%block content%}
+
+    <section class="recipe-page ">
+
+      <div class="recipe" id="{{item.id}}">
+        <img src="{{item.image}}" alt="Imagem de {{item.title}}"/>
+        <div class="recipe-title">
+          <p>{{item.title}}</p>
+        </div>
+        <div class="recipe-aut">
+          <p>{{item.author}}</p>
+        </div>
+      </div>
+
+    </section>
+    <div class="description">
+      <div class="button">
+        <h1 id="title">Ingredientes</h1>
+        <button class="esconder">ESCONDER</button>
+        <button class="mostrar">MOSTRAR</button>
+
+      </div>
+      <div class="text">
+        <ul>
+          {% for ingredient in item.ingredients %}
+            <li>{{ingredient}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="button">
+        <h1 id="title">Modo de preparo</h1>
+        <button class="esconder">ESCONDER</button>
+        <button class="mostrar">MOSTRAR</button>
+      </div>
+
+      <div class="text">
+        <ul>
+          {% for preparation in item.preparation %}
+            <li >{{preparation}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="button">
+        <h1 id="title">Informações adicionais</h1>
+        <button class="esconder">ESCONDER</button>
+        <button class="mostrar">MOSTRAR</button>
+      </div>
+
+      <div class="text">
+        {{item.information| nl2br}}
+      </div>
+
+      <script src="/scripts.js"></script>
+
+      {%endblock%}
